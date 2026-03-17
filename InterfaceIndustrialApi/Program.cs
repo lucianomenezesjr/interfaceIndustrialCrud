@@ -35,6 +35,16 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // Registrar repositórios e serviços
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
+// Device / Sensor / Actuator / SensorData registrations
+builder.Services.AddScoped<IDeviceRepository, DeviceRepository>();
+builder.Services.AddScoped<ISensorRepository, SensorRepository>();
+builder.Services.AddScoped<IActuatorRepository, ActuatorRepository>();
+builder.Services.AddScoped<ISensorDataRepository, SensorDataRepository>();
+
+builder.Services.AddScoped<IDeviceService, DeviceService>();
+builder.Services.AddScoped<ISensorService, SensorService>();
+builder.Services.AddScoped<IActuatorService, ActuatorService>();
+builder.Services.AddScoped<ISensorDataService, SensorDataService>();
 
 // Adicionar controllers e Swagger
 builder.Services.AddControllers();

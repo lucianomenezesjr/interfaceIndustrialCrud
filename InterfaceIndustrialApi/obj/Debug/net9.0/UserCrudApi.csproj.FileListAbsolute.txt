@@ -150,3 +150,4 @@
 /home/lucianojr/Documentos/interfaceIndustrialCrud/InterfaceIndustrialApi/obj/Debug/net9.0/UserCrudApi.pdb
 /home/lucianojr/Documentos/interfaceIndustrialCrud/InterfaceIndustrialApi/obj/Debug/net9.0/UserCrudApi.genruntimeconfig.cache
 /home/lucianojr/Documentos/interfaceIndustrialCrud/InterfaceIndustrialApi/obj/Debug/net9.0/ref/UserCrudApi.dll
+/home/lucianojr/Documentos/interfaceIndustrialCrud/InterfaceIndustrialApi/obj/Debug/net9.0/UserCrudApi.sourcelink.json
