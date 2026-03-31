@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using UserCrudApi.DTOs;
-using UserCrudApi.Services.Interfaces;
+using interfaceIndustrialApi.DTOs;
+using interfaceIndustrialApi.Services.Interfaces;
 
-namespace UserCrudApi.Controllers
+namespace interfaceIndustrialApi.Controllers
 {
     [ApiController]
     [Route("api/sensors/{sensorId:guid}/[controller]")]

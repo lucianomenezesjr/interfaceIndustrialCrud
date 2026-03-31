@@ -1,6 +1,6 @@
-using UserCrudApi.DTOs;
+using interfaceIndustrialApi.DTOs;
 
-namespace UserCrudApi.Services.Interfaces
+namespace interfaceIndustrialApi.Services.Interfaces
 {
 	public interface IUserService
 	{

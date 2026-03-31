@@ -1,4 +1,4 @@
-namespace UserCrudApi.Models
+namespace interfaceIndustrialApi.Models
 {
 	public class User
 	{

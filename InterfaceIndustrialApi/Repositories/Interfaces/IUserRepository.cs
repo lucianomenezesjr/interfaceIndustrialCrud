@@ -1,9 +1,9 @@
 
-using UserCrudApi.Models;
+using interfaceIndustrialApi.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace UserCrudApi.Repositories.Interfaces
+namespace interfaceIndustrialApi.Repositories.Interfaces
 {
 	public interface IUserRepository
 	{

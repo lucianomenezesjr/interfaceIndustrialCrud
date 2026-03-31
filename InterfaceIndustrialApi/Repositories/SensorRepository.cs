@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using UserCrudApi.Data;
-using UserCrudApi.Models;
-using UserCrudApi.Repositories.Interfaces;
+using interfaceIndustrialApi.Data;
+using interfaceIndustrialApi.Models;
+using interfaceIndustrialApi.Repositories.Interfaces;
 
-namespace UserCrudApi.Repositories
+namespace interfaceIndustrialApi.Repositories
 {
     public class SensorRepository : ISensorRepository
     {

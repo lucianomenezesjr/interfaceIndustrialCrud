@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace UserCrudApi.DTOs
+namespace interfaceIndustrialApi.DTOs
 {
     public class CreateSensorDto
     {

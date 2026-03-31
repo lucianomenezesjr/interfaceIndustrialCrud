@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace UserCrudApi.Models
+namespace interfaceIndustrialApi.Models
 {
     public enum DeviceProtocol
     {

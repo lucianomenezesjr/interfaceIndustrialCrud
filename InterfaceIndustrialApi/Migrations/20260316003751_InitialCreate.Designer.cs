@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using UserCrudApi.Data;
+using interfaceIndustrialApi.Data;
 
 #nullable disable
 
-namespace UserCrudApi.Migrations
+namespace interfaceIndustrialApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20260316003751_InitialCreate")]
@@ -25,7 +25,7 @@ namespace UserCrudApi.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("UserCrudApi.Models.User", b =>
+            modelBuilder.Entity("interfaceIndustrialApi.Models.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

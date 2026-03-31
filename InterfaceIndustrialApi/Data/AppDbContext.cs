@@ -1,8 +1,8 @@
 
 using Microsoft.EntityFrameworkCore;
-using UserCrudApi.Models;
+using interfaceIndustrialApi.Models;
 
-namespace UserCrudApi.Data
+namespace interfaceIndustrialApi.Data
 {
 	public class AppDbContext : DbContext
 	{

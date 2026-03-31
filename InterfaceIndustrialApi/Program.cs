@@ -1,10 +1,10 @@
 
 using Microsoft.EntityFrameworkCore;
-using UserCrudApi.Data;
-using UserCrudApi.Repositories;
-using UserCrudApi.Repositories.Interfaces;
-using UserCrudApi.Services;
-using UserCrudApi.Services.Interfaces;
+using interfaceIndustrialApi.Data;
+using interfaceIndustrialApi.Repositories;
+using interfaceIndustrialApi.Repositories.Interfaces;
+using interfaceIndustrialApi.Services;
+using interfaceIndustrialApi.Services.Interfaces;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
@@ -53,7 +53,7 @@ builder.Services.AddSwaggerGen();
 
 // JWT Authentication
 var jwtKey = builder.Configuration["Jwt:Key"] ?? "super_secret_key_123!";
-var jwtIssuer = builder.Configuration["Jwt:Issuer"] ?? "UserCrudApi";
+var jwtIssuer = builder.Configuration["Jwt:Issuer"] ?? "interfaceIndustrialApi";
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = "JwtBearer";

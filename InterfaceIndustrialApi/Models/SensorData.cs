@@ -1,6 +1,6 @@
 using System;
 
-namespace UserCrudApi.Models
+namespace interfaceIndustrialApi.Models
 {
     public class SensorData
     {

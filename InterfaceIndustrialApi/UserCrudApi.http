@@ -1,6 +1,6 @@
-@UserCrudApi_HostAddress = http://localhost:5071
+@interfaceIndustrialApi_HostAddress = http://localhost:5071
 
-GET {{UserCrudApi_HostAddress}}/weatherforecast/
+GET {{interfaceIndustrialApi_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###

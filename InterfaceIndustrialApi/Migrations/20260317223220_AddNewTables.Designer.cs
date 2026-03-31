@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using UserCrudApi.Data;
+using interfaceIndustrialApi.Data;
 
 #nullable disable
 
-namespace UserCrudApi.Migrations
+namespace interfaceIndustrialApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20260317223220_AddNewTables")]
@@ -25,7 +25,7 @@ namespace UserCrudApi.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("UserCrudApi.Models.Actuator", b =>
+            modelBuilder.Entity("interfaceIndustrialApi.Models.Actuator", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -61,7 +61,7 @@ namespace UserCrudApi.Migrations
                     b.ToTable("Actuators");
                 });
 
-            modelBuilder.Entity("UserCrudApi.Models.Device", b =>
+            modelBuilder.Entity("interfaceIndustrialApi.Models.Device", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -105,7 +105,7 @@ namespace UserCrudApi.Migrations
                     b.ToTable("Devices");
                 });
 
-            modelBuilder.Entity("UserCrudApi.Models.Sensor", b =>
+            modelBuilder.Entity("interfaceIndustrialApi.Models.Sensor", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -144,7 +144,7 @@ namespace UserCrudApi.Migrations
                     b.ToTable("Sensors");
                 });
 
-            modelBuilder.Entity("UserCrudApi.Models.SensorData", b =>
+            modelBuilder.Entity("interfaceIndustrialApi.Models.SensorData", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -171,7 +171,7 @@ namespace UserCrudApi.Migrations
                     b.ToTable("SensorData");
                 });
 
-            modelBuilder.Entity("UserCrudApi.Models.User", b =>
+            modelBuilder.Entity("interfaceIndustrialApi.Models.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -196,9 +196,9 @@ namespace UserCrudApi.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("UserCrudApi.Models.Actuator", b =>
+            modelBuilder.Entity("interfaceIndustrialApi.Models.Actuator", b =>
                 {
-                    b.HasOne("UserCrudApi.Models.Device", "Device")
+                    b.HasOne("interfaceIndustrialApi.Models.Device", "Device")
                         .WithMany("Actuators")
                         .HasForeignKey("DeviceId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -207,9 +207,9 @@ namespace UserCrudApi.Migrations
                     b.Navigation("Device");
                 });
 
-            modelBuilder.Entity("UserCrudApi.Models.Sensor", b =>
+            modelBuilder.Entity("interfaceIndustrialApi.Models.Sensor", b =>
                 {
-                    b.HasOne("UserCrudApi.Models.Device", "Device")
+                    b.HasOne("interfaceIndustrialApi.Models.Device", "Device")
                         .WithMany("Sensors")
                         .HasForeignKey("DeviceId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -218,22 +218,22 @@ namespace UserCrudApi.Migrations
                     b.Navigation("Device");
                 });
 
-            modelBuilder.Entity("UserCrudApi.Models.SensorData", b =>
+            modelBuilder.Entity("interfaceIndustrialApi.Models.SensorData", b =>
                 {
-                    b.HasOne("UserCrudApi.Models.Device", null)
+                    b.HasOne("interfaceIndustrialApi.Models.Device", null)
                         .WithMany()
                         .HasForeignKey("DeviceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("UserCrudApi.Models.Sensor", null)
+                    b.HasOne("interfaceIndustrialApi.Models.Sensor", null)
                         .WithMany()
                         .HasForeignKey("SensorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("UserCrudApi.Models.Device", b =>
+            modelBuilder.Entity("interfaceIndustrialApi.Models.Device", b =>
                 {
                     b.Navigation("Actuators");
 

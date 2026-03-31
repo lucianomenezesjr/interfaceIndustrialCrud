@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace UserCrudApi.Migrations
+namespace interfaceIndustrialApi.Migrations
 {
     /// <inheritdoc />
     public partial class AddUserPassword : Migration

@@ -1,10 +1,10 @@
 
-using UserCrudApi.Models;
-using UserCrudApi.Data;
-using UserCrudApi.Repositories.Interfaces;
+using interfaceIndustrialApi.Models;
+using interfaceIndustrialApi.Data;
+using interfaceIndustrialApi.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace UserCrudApi.Repositories
+namespace interfaceIndustrialApi.Repositories
 {
 	public class UserRepository : IUserRepository
 	{

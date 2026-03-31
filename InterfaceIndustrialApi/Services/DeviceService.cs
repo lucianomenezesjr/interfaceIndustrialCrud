@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using UserCrudApi.DTOs;
-using UserCrudApi.Models;
-using UserCrudApi.Repositories.Interfaces;
-using UserCrudApi.Services.Interfaces;
+using interfaceIndustrialApi.DTOs;
+using interfaceIndustrialApi.Models;
+using interfaceIndustrialApi.Repositories.Interfaces;
+using interfaceIndustrialApi.Services.Interfaces;
 
-namespace UserCrudApi.Services
+namespace interfaceIndustrialApi.Services
 {
     public class DeviceService : IDeviceService
     {

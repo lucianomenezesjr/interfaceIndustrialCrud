@@ -4,10 +4,10 @@ services:
 
   postgres:
     image: postgres:15
-    container_name: postgres_users
+    container_name: interfaceIndustrialdb
     restart: always
     environment:
-      POSTGRES_DB: usersdb
+      POSTGRES_DB: interfaceIndustrial_db
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:

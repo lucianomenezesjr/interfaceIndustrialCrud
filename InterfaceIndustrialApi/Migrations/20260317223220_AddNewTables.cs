@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace UserCrudApi.Migrations
+namespace interfaceIndustrialApi.Migrations
 {
     /// <inheritdoc />
     public partial class AddNewTables : Migration

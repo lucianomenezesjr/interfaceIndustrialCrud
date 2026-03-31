@@ -1,4 +1,4 @@
-namespace UserCrudApi.DTOs
+namespace interfaceIndustrialApi.DTOs
 {
 	public class UpdateUserDto
 	{

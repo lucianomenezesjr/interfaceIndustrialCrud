@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using UserCrudApi.Data;
-using UserCrudApi.DTOs;
-using UserCrudApi.Models;
+using interfaceIndustrialApi.Data;
+using interfaceIndustrialApi.DTOs;
+using interfaceIndustrialApi.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
 using System.Text;
@@ -9,7 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
-namespace UserCrudApi.Controllers
+namespace interfaceIndustrialApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -60,7 +60,7 @@ namespace UserCrudApi.Controllers
         private string GenerateJwtToken(User user)
         {
             var jwtKey = _configuration["Jwt:Key"] ?? "super_secret_key_123!";
-            var jwtIssuer = _configuration["Jwt:Issuer"] ?? "UserCrudApi";
+            var jwtIssuer = _configuration["Jwt:Issuer"] ?? "interfaceIndustrialApi";
 
             var claims = new[]
             {
